@@ -146,7 +146,11 @@ export default {
           title:
             "Do you have any commercial experience with Redis and if yes, to what level of experience?",
           answer: "Yes",
-          check: true
+          check: true,
+          progress: {
+            value: 40,
+            max: 100
+          }
         },
         {
           title:
