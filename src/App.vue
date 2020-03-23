@@ -2,7 +2,7 @@
   <div class="container p-4" id="app">
     <h6 class="mb-4">
       Build with
-      <b-icon icon="heart-fill" variant="danger"></b-icon>using
+      <b-icon icon="heart-fill" variant="danger" class="ml-1 mr-1"></b-icon>using
       <b-badge variant="light mr-2">Docker</b-badge>
       <b-badge variant="light mr-2">Digitalocean</b-badge>
       <b-badge variant="light mr-2">Nginx</b-badge>
@@ -225,7 +225,7 @@ export default {
         {
           title:
             "Please send through a voice recording with a brief introduction to yourself.",
-          answer: ""
+          answer: "sent"
         }
       ]
     };
