@@ -12,6 +12,9 @@
     </h6>
     <div v-for="(question, index) in questions" :key="index" class="border-bottom mb-3">
       <p class="text-black-50">{{++index}}) {{question.title}}</p>
+      <audio v-if="question.audio" controls>
+        <source :src="question.src"  type="audio/x-m4a">
+      </audio>
       <p>
         <b-icon v-if="question.check === true" icon="check"></b-icon>
         <b-icon v-if="question.check === false" icon="x"></b-icon>
@@ -229,7 +232,8 @@ export default {
         {
           title:
             "Please send through a voice recording with a brief introduction to yourself.",
-          answer: "sent"
+          src: "omar.m4a",
+          audio: true
         }
       ]
     };
