@@ -95,9 +95,8 @@ export default {
           }
         },
         {
-          title: "http://omarmakled.me/",
-          src: "omar.m4a",
-          audio: true
+          title: "About",
+          answer: "http://omarmakled.me/"
         },
         {
           title: "Screencasts",
